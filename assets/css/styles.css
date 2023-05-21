@@ -1267,7 +1267,7 @@ img {
    }
 
    .services__content{
-      padding: 6rem 0 2rem 2.5rem;
+      padding: 3rem 0 2rem 2rem;
    }
 
    .services__modal-content{
@@ -1275,7 +1275,7 @@ img {
    }
 
    .project__img{
-      width: 320px;
+      width: 350px;
    }
    
    .portfolio__content{
