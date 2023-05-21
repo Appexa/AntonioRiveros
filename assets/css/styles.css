@@ -410,16 +410,26 @@ img {
 
 
 /*==================== ABOUT ====================*/
+
+.about__container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
 .about__img {
    width: 200px;
    border-radius: 0.5rem;
    justify-self: center;
    align-self: center;
+   margin-bottom: 2em;
 }
 
 .about__description {
-   text-align: center;
+   text-align: justify;
    margin-bottom: var(--mb-2-5);
+   
 }
 
 .about__info{
@@ -448,6 +458,15 @@ img {
 .about__buttons{
    display: flex;
    justify-content: center;
+}
+
+.about__iframe{
+   margin-bottom: 2em;
+}
+
+.about__iframe iframe{
+   width:auto;
+   height:315px;
 }
 
 
@@ -661,6 +680,10 @@ img {
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
    transition: .3s;
 }
+.services__content img {
+   max-width: 120px;
+   height: auto;
+}
 
 .services__content:hover{
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -738,6 +761,10 @@ img {
 .services__modal-icon{
    color: var(--first-color);
    margin-right: var(--mb-0-25);
+}
+
+.services__content__img img{
+   width: 170px !important;
 }
 
 /* Active Modal */
@@ -1206,11 +1233,16 @@ img {
    }
 
    .about__description{
-      text-align: initial;
+      text-align: justify;
    }
 
-   .about__info{
+   /* .about__info{
       justify-content: space-between;
+   } */
+
+   .about__iframe iframe{
+      width:560px;
+      height:315px;
    }
 
    .about__buttons{
