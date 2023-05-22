@@ -213,3 +213,18 @@ themeButton.addEventListener('click', () => {
    localStorage.setItem('selected-icon', getCurrentIcon())
 
 })
+
+//to send messages
+function sendEmail() {
+   // var to = "antonio.riveros.pilco@gmail.com";
+   var to = "sara.salazarsdad@gmail.com";
+   var subject = document.getElementById("subject").value;
+   var message = document.getElementById("message").value;
+ 
+   var mailtoLink = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
+ 
+   window.open(mailtoLink);
+   location.reload()
+
+ 
+ }
