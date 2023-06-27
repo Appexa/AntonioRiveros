@@ -217,7 +217,7 @@ themeButton.addEventListener('click', () => {
 //to send messages
 function sendEmail() {
    // var to = "antonio.riveros.pilco@gmail.com";
-   var to = "sara.salazarsdad@gmail.com";
+   var to = "antonio.riveros.pilco@gmail.com";
    var subject = document.getElementById("subject").value;
    var message = document.getElementById("message").value;
  
