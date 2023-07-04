@@ -215,17 +215,27 @@ themeButton.addEventListener('click', () => {
 })
 
 //to send messages
+
 function sendEmail() {
-   // var to = "antonio.riveros.pilco@gmail.com";
-   var to = "antonio.riveros.pilco@gmail.com";
-   var subject = document.getElementById("subject").value;
-   var message = document.getElementById("message").value;
- 
-   var mailtoLink = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
- 
-   window.open(mailtoLink);
-   location.reload()
+   var asunto = document.getElementById('subject').value;
+   var mensaje = document.getElementById('message').value;
 
- 
- }
-
+   Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "ivansanguezax@gmail.com",
+      Password : "128BD5D3BA942E1ABA2F2B25442598D1E50C",
+      To : 'iwancho23@gmail.com',
+      From : "ivansanguezax@gmail.com",
+      Subject : asunto,
+      Body : mensaje
+  }).then(
+   function(response) {
+      if (response === 'OK') {
+        alert('¡Correo enviado con éxito!');
+        document.getElementById('emailForm').reset();
+      } else {
+        alert('Error al enviar el correo.');
+      }
+    }
+  );
+}
