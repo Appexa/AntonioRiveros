@@ -1,6 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+@import "https://fonts.googleapis.com/css?family=VT323";
 /*==================== VARIABLES CSS ====================*/
 :root {
    --header-height: 3rem;
@@ -1403,6 +1403,56 @@ img {
      right: 900px;
    }
  }
+ 
+ /*==================== 404 ====================*/
+
+ .bodyerror{
+   background: #0414a7;
+ }
+ .p_error{
+   font: normal 20px/1.25rem "VT323", monospace;
+ }
+ .h1_error{
+   font: normal 2.75rem/1.05em "VT323", monospace;
+ }
+ .a_error{
+   color: #e0e2f4;
+ }
+ 
+ .container_error {
+   width: 90%;
+   margin: auto;
+   max-width: 640px;
+ }
+ 
+ .bsod {
+   padding-top: 10%;
+ }
+ .bsod .neg {
+   text-align: center;
+   color: #0414a7;
+ }
+ .bsod .neg .bg {
+   background: #aaaaaa;
+   padding: 0 15px 2px 13px;
+ }
+ .bsod .title {
+   margin-bottom: 50px;
+ }
+ .bsod .nav_error {
+   margin-top: 35px;
+   text-align: center;
+ }
+ .bsod .nav_error .link {
+   text-decoration: none;
+   padding: 0 9px 2px 8px;
+ }
+ .bsod .nav_error .link:hover, .bsod .nav .link:focus {
+   background: #aaaaaa;
+   color: #0414a7;
+ }
+
+
 
 
 /*==================== MEDIA QUERIES ====================*/
